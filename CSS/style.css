@@ -20,8 +20,6 @@ select {
     border-radius: 4px;
     padding: 10px;
     font-size: 18px;
-
-
 }
 
 .city {
@@ -32,6 +30,7 @@ select {
     border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
 
 }
+
 h2 {
     margin: 0 0 5px;
     font-size: 28px;
@@ -72,5 +71,7 @@ h1 {
 
 footer {
     text-align: center;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
 
 }
