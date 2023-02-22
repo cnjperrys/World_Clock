@@ -18,5 +18,21 @@ sydneyDateElement.innerHTML = sydneyTime.format("MMMM Do, YYYY");
 sydneyTimeElement.innerHTML = sydneyTime.format("h:mm:ss[<small>]A[</small>]");
 }
 
+
+updateCity(event) {
+    let cityTimeZone = event.target.value;
+    let cityTime = moment().tz(cityTimeZone);
+    let citiesElement = document.querySelector("#cities");
+    citiesElement.innerHTML = cityTimeZone;
+}
+
+
 updateTime();
 setInterval(updateTime, 1000);
+
+
+
+
+let citiesSelectElement = document.querySelector("#city");
+
+citiesSelectElement.addEventListener("change", updaetCity);
