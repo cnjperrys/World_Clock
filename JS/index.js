@@ -21,6 +21,9 @@ sydneyTimeElement.innerHTML = sydneyTime.format("h:mm:ss[<small>]A[</small>]");
 
 function updateCity(event) {
     let cityTimeZone = event.target.value;
+    if (cityTimeZone ==="current") {
+        cityTimeZone = moment.tz.guess();
+    }
     cityTimeZone = cityTimeZone.replace("_", " ").split("/")[1];
     cityTimeZone = cityTimeZone.replace("/", " ");
     let cityTime = moment().tz(cityTimeZone);
