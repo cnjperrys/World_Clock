@@ -1,5 +1,7 @@
 body {
-    background-color: #f9f7fe;
+    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/068/891/original/worldcomm.png?1677212105");
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: sans-serif;
 
 }
@@ -7,7 +9,7 @@ body {
 .container {
     max-width: 600px;
     margin: 60px auto;
-    background: white;
+    background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);
     padding: 60px;
     box-shadow: rgba(100,100,111, 0.2) 0px 7px 29px 0px;
     border-radius: 10px;
@@ -20,6 +22,7 @@ select {
     border-radius: 4px;
     padding: 10px;
     font-size: 18px;
+    background:rgb(169, 181, 192);
 }
 
 .city {
@@ -72,6 +75,10 @@ h1 {
 footer {
     text-align: center;
     font-size: 18px;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgb(131, 172, 199);
+    background:#0f0f11;
 
+}
+footer a {
+    color:blanchedalmond;
 }
